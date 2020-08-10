@@ -1,0 +1,23 @@
+# hexadecimal colors 
+
+# metro ui
+# https://www.color-hex.com/color-palette/700
+#boostrap colors
+https://www.color-hex.com/color-palette/5452
+background: white/cream
+
+white: #FFFFFF
+snow: 	#f9f9f9
+
+
+# backround texts
+mint: #3EB489
+mint2: #5cb85c
+wine?: #d9534f
+blue buttons?: #5bc0de	
+blue buttons 2 ?: #428bca	
+
+# letters
+letra: white/ black
+white: #FFFFFF
+black: #000000
