@@ -19,9 +19,9 @@ frame = LabelFrame(root, text='Facultad de ingeniería en Sistemas, Electrónica
 frame.pack(padx=10, pady=20)
 
 logouta = ImageTk.PhotoImage(Image.open("public\escudo-uta.png"))
-my_logo = Label(frame, image=logouta)
+my_logo = Label(root, image=logouta)
 my_logo.pack()
-#my_logo.grid(row=1, column=0)
+# my_logo.grid(row=1, column=0)
 
 # tsecond title
 appTitle = Label(frame, text='"Test para anticipar el Parkinson"', bg='#3EB489')
