@@ -56,6 +56,5 @@ def closeWindow():
 # add exit button
 Button(window, text='Exit', width='14', command=closeWindow ).grid( row=7, column=0, sticky=W )
 
-
 # keeps window opened
 window.mainloop()
