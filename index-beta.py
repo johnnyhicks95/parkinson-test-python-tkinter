@@ -8,6 +8,9 @@ except ImportError:
     import Tkinter as tk     # python 2
     import tkFont as tkfont  # python 2
 
+# modulo para mostrar imagenes
+from PIL import ImageTk,Image
+
 # seria la clase padre con la configuracion de la ventana
 class MultiWindows(tk.Tk):
 
@@ -127,21 +130,27 @@ class HomePage(tk.Frame):
 
 def ventanaDos():
     print("ventana 2 en consola")
+
 def ventanaUno():
     newWindow = tk.Toplevel()
     pregunta = tk.Label(newWindow, text= " Pregunta N° 1 ")
     pregunta.grid(column=2 , row=0)
+
+    imagen1 = ImageTk.PhotoImage(Image.open("public\pregunta1.jpeg"))
+    cuadro1 = tk.Label(image=imagen1)
+    pregunta.grid(column=2 , row=1)
+
     preguntas = tk.Label(newWindow, text= " ¿Ha notado temblor en sus dedos, manos, mentón o labios? ")
-    preguntas.grid(column=2 , row=1)
+    preguntas.grid(column=2 , row=3)
     respuesta= tk.Radiobutton(newWindow, text='Si', value=1)
     respuestaDos= tk.Radiobutton(newWindow, text='No', value=2)
-    respuesta.grid(column=2 , row=2)
-    respuestaDos.grid(column=2 , row=3)
+    respuesta.grid(column=2 , row=4)
+    respuestaDos.grid(column=2 , row=5)
     continueBut= tk.Button(newWindow, text='Continuar' , bg='#428bca',command=ventanaDos)
-    continueBut.grid(column=2 , row=5)
+    continueBut.grid(column=3 , row=5)
     # buttonQuit = tk.Button(newWindow,bg="#d9534f" ,fg="#fff", text="Cerrar test", command=self.quit)
     buttonQuit = tk.Button(newWindow,bg="#d9534f" ,fg="#fff", text="Cerrar test")
-    buttonQuit.grid(column=2 , row=6)
+    buttonQuit.grid(column=4 , row=5)
 
 class Test(tk.Frame):
 
