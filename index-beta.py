@@ -164,6 +164,8 @@ class Test(tk.Frame):
 
             # windows content
         description = tk.Label(self, text='''
+
+
             Instrucciones! 
         - El siguientes test consta de 10 preguntas.
         - Trate de contestar sinceramente las preguntas para
@@ -206,9 +208,11 @@ class Tratamientos(tk.Frame):
 
                     # windows content
         descriptionTreatment = tk.Label(self, text='''
-        Hable con su médico para desarrollar un plan de cuidado, el cual puede incluir lo siguiente:
 
         
+        Hable con su médico para desarrollar un plan de cuidado, el cual puede incluir lo siguiente:
+
+
         ->Evaluación de un neurólogo, el cual es un médico especializado en el cerebro, 
         para que le haga una evaluación completa sobre sus síntomas.
 
