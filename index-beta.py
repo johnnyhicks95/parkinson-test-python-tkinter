@@ -197,12 +197,34 @@ class Tratamientos(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         self.controller = controller
-        label = tk.Label(self, text="Aquí son los tratamientos", font=controller.title_font)
-        label.pack(side="top", fill="x", pady=10)
+        self.configure(background='#5bc0de')
+
+        label = tk.Label(self, text="El diagnóstico temprano le puede ayudar a tener una vida más larga y saludable.", font=controller.title_font)
+        label.grid(row=0, column=0)
+        # label.pack(side="top", fill="x", pady=10)
+
+
+                    # windows content
+        descriptionTreatment = tk.Label(self, text='''
+        Hable con su médico para desarrollar un plan de cuidado, el cual puede incluir lo siguiente:
+
+        
+        ->Evaluación de un neurólogo, el cual es un médico especializado en el cerebro, 
+        para que le haga una evaluación completa sobre sus síntomas.
+
+        ->Evaluación y atención de un terapista ocupacional, terapista físico y/o terapista de lenguaje.
+
+        ->Consulta con un trabajador social
+
+        ->Comience una rutina de ejercicio para retardar el avance de síntomas más severos.
+
+        ->Hable con sus familiares y amigos quien le pueden brindar el apoyo que usted necesita.''', 
+            bg = '#f9f9f9', pady=10,bd=1 )
+        descriptionTreatment.grid(column=0, row= 1)
         button = tk.Button(self, text="Ir a Página de inicio",
                            command=lambda: controller.show_frame("HomePage"))
-        button.pack()
-
+        # button.pack()
+        button.grid(row=2, column=0)
 
 if __name__ == "__main__":
     app = MultiWindows()
