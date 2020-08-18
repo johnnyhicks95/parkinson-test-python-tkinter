@@ -55,12 +55,6 @@ comments =Label(frame1, text='''*******  Indicaciones  ***********
     bg = '#f9f9f9', relief=SUNKEN, pady=10,bd=1, anchor=W )
 comments.grid(column=3, row=4)
 
-# input for name?
-# userName = ''
-# inputUserName = Entry( frame1, width=20, textvariable= userName )
-# inputUserName.grid(column=1, row=5)
-
-
 # Buttons
 continueBut = Button(frame1, text='Continuar', bg='#428bca', relief=RAISED, width=14, height=1)
 continueBut.grid(column=2 , row=5)
