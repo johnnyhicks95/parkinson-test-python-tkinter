@@ -65,7 +65,7 @@ class HomePage(tk.Frame):
 
         # nombre de la universidad
         nameUta = tk.Label(frame1, text='Universidad Técnica de Ambato', 
-                        bg='#5cb85c', width=40,height=2)
+                        bg='#d9534f', width=40,height=2)
         nameUta.grid(column=2 , row=1)
 
         appName = tk.Label(frame1, text='Test de Parkinson', bg='#3EB489',width=30)

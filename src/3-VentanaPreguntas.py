@@ -201,17 +201,18 @@ def instrucciones():
     newWindow = Toplevel(ventana)
     description = Label(newWindow, text='''
          Instrucciones! 
-         ++++++++++++++++++++++++++++++++++++++++++++ 
+    - El siguientes test consta de 10 preguntas.
+    - Trate de contestar sinceramente las preguntas para
+     poder aproximar mejor el resultado.
+    - El test tiene una duración de aproximadamente 5 minutos.
 
-         ++++++++++++++++++++++++++++++++++++++++++++
+    Observación:
 
-         +++++++++++++++++++++++++++++++++++++++++++++++++
-         ++++++++++++++++++++++++++++++++++++++++++++++++
-
-         ++++++++++++++++++++++++++++++
-
-         ++++++++++++++++++++++++++++++++++++++++++++++
-         +++++++++++++++++++++++++++++++++++++++++++.''', 
+    - El siguiente programa *SOLAMENTE aproxima en porcentaje
+     si podría o no tener la enfermedad, no reemplaza a exámenes
+     o diagnóstico de alguien con estudios de medicina.
+    - Si tiene dudas solicite ayuda temprana a su médico de 
+     confianza''', 
          bg = '#f9f9f9', pady=10,bd=1, anchor=W )
     description.grid(column=2, row= 3)
     continueBut= Button(newWindow, text='Continuar' , bg='#428bca',command=ventanaUno )
