@@ -122,9 +122,26 @@ class HomePage(tk.Frame):
         # button1.pack()
         # button2.pack()
 
+# **********************8
+#  Preguntas del test
 
+def ventanaDos():
+    print("ventana 2 en consola")
 def ventanaUno():
-    print('Ventana uno en consola')
+    newWindow = tk.Toplevel()
+    pregunta = tk.Label(newWindow, text= " Pregunta N° 1 ")
+    pregunta.grid(column=2 , row=0)
+    preguntas = tk.Label(newWindow, text= " ¿Ha notado temblor en sus dedos, manos, mentón o labios? ")
+    preguntas.grid(column=2 , row=1)
+    respuesta= tk.Radiobutton(newWindow, text='Si', value=1)
+    respuestaDos= tk.Radiobutton(newWindow, text='No', value=2)
+    respuesta.grid(column=2 , row=2)
+    respuestaDos.grid(column=2 , row=3)
+    continueBut= tk.Button(newWindow, text='Continuar' , bg='#428bca',command=ventanaDos)
+    continueBut.grid(column=2 , row=5)
+    # buttonQuit = tk.Button(newWindow,bg="#d9534f" ,fg="#fff", text="Cerrar test", command=self.quit)
+    buttonQuit = tk.Button(newWindow,bg="#d9534f" ,fg="#fff", text="Cerrar test")
+    buttonQuit.grid(column=2 , row=6)
 
 class Test(tk.Frame):
 
