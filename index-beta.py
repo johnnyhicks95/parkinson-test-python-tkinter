@@ -122,20 +122,48 @@ class HomePage(tk.Frame):
         # button1.pack()
         # button2.pack()
 
+
+def ventanaUno():
+    print('Ventana uno en consola')
+
 class Test(tk.Frame):
 
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         self.controller = controller
+        self.configure(background='#5cb85c')
         label = tk.Label(self, text="Empezemos el test", font=controller.title_font, bg="#5bc0de")
-        label.grid(row=0, column=0)
+        label.grid(row=0, column=2)
         # label.pack(side="top", fill="x", pady=10)
+
+            # windows content
+        description = tk.Label(self, text='''
+            Instrucciones! 
+        - El siguientes test consta de 10 preguntas.
+        - Trate de contestar sinceramente las preguntas para
+        poder aproximar mejor el resultado.
+        - El test tiene una duración de aproximadamente 5 minutos.
+
+        Observación:
+
+        - El siguiente programa *SOLAMENTE aproxima en porcentaje
+        si podría o no tener la enfermedad, no reemplaza a exámenes
+        o diagnóstico de alguien con estudios de medicina.
+        - Si tiene dudas solicite ayuda temprana a su médico de 
+        confianza''', 
+            bg = '#f9f9f9', pady=10,bd=1 )
+        description.grid(column=2, row= 1)
+        continueBut= tk.Button(self, text='Continuar' , bg='#428bca',command=ventanaUno, width=20 )
+        continueBut.grid(column=2 , row=3)
+        # buttonQuit = Button(newWindow,bg="#d9534f" ,fg="#fff", text="Cerrar programa", command=ventana.quit)
+        # buttonQuit.grid(column=2 , row=6)       
+
+        # bu8ttona
         button = tk.Button(self, text="Ir a Página de inicio",
                            command=lambda: controller.show_frame("HomePage"), bg="#428bca")
-        # button.pack()
-        button.grid(column=0, row=6)
+        button.grid(column=0, row=4)
         exitBut = tk.Button(self, text='Salir', bg="#d9534f",fg="#fff",command=self.quit , width=14, height=1)
-        exitBut.grid(column=0, row=7)
+        exitBut.grid(column=1, row=4)
 
 
 class Tratamientos(tk.Frame):
