@@ -1,4 +1,5 @@
 from tkinter import *
+from PIL import ImageTk,Image
 
 def tratamiento():
     newWindow = Toplevel(ventana)
@@ -219,9 +220,13 @@ def instrucciones():
     buttonQuit.grid(column=2 , row=6)
     ventana.iconify()
 
-
+# root tkinter instance
 ventana = Tk()
-ventana.title('Home screen')
+# window title
+ventana.title('Universidad Técnica de Ambato  - Facultad de ingeniería en Software')
+# title logo
+ventana.iconbitmap('public\education-logo.ico')
+# ventana.title('Home screen')
 
 frame1 =Frame(ventana)
 frame1.grid(row=0, column=0, padx=(50,50), pady=(20,30))
@@ -259,7 +264,7 @@ authorsNames = Label(frame1, text='''Autores:
 FISEI-Software © 2020''', bg = '#f9f9f9', relief=SUNKEN, pady=10,bd=1, anchor=W )
 authorsNames.grid(column=0, row=4)
 
-comments =Label(frame1, text='''*******  Indicaciones para ***********
+comments =Label(frame1, text='''*******  Indicaciones ***********
 ->Empezar el test, click en "Continuar"
 ->Terminar el programa, click en "Salir" ''', 
     bg = '#f9f9f9', relief=SUNKEN, pady=10,bd=1, anchor=W )

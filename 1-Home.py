@@ -49,7 +49,7 @@ authorsNames = Label(frame1, text='''Autores:
 FISEI-Software © 2020''', bg = '#f9f9f9', relief=SUNKEN, pady=10,bd=1, anchor=W )
 authorsNames.grid(column=0, row=4)
 
-comments =Label(frame1, text='''*******  Indicaciones para ***********
+comments =Label(frame1, text='''*******  Indicaciones  ***********
 ->Empezar el test, click en "Continuar"
 ->Terminar el programa, click en "Salir" ''', 
     bg = '#f9f9f9', relief=SUNKEN, pady=10,bd=1, anchor=W )
